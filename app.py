@@ -420,7 +420,7 @@ if not st.session_state.mulai_belajar and st.session_state.current_page in locke
 
 # --- HALAMAN 1: BERANDA LKPD ---
 if st.session_state.current_page == "1. 🏠 Beranda LKPD":
-    st.markdown('<h1 class="title-gradient">SMAN 10 BANDAR LAMPUNG<br>LKPD NFORMATIKA KELAS 10<br>DATA, INFORMASI, DAN VALIDASINYA</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="title-gradient">SMAN 10 BANDAR LAMPUNG<br>LKPD INFORMATIKA KELAS 10<br>DATA, INFORMASI, DAN VALIDASINYA</h1>', unsafe_allow_html=True)
     st.markdown('<p class="subtitle-text">Petualangan Belajar Interaktif untuk Kelas X SMA</p>', unsafe_allow_html=True)
     
     st.info("""
