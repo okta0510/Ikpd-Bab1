@@ -16,7 +16,7 @@ try:
     openpyxl_installed = True
 except ImportError:
     openpyxl_installed = False
-    
+
 # =====================================================================
 # INISIALISASI SESSION STATE
 # =====================================================================
@@ -319,7 +319,7 @@ def render_crossword_html():
                 letter = get_revealed_letter(r, c)
                 clue_num = grid_clue_numbers.get((r, c), "")
                 
-                html += '<td style="width: 40px; height: 40px; border: 1px solid #9ca3af; background-color: #FFF8DC; color: #1e1b4b; text-align: center; font-size: 20px; font-weight: bold; position: relative; padding: 0; box-shadow: inset 0 0 4px rgba(0,0,0,0.1);">'
+                html += '<td style="width: 40px; height: 40px; border: 1px solid #9ca3af; background-color: #ffffff; color: #1e1b4b; text-align: center; font-size: 20px; font-weight: bold; position: relative; padding: 0; box-shadow: inset 0 0 4px rgba(0,0,0,0.1);">'
                 if clue_num:
                     html += f'<span style="font-size: 9px; position: absolute; top: 1px; left: 2px; color: #4b5563; font-weight: normal;">{clue_num}</span>'
                 html += f'<span style="line-height: 40px;">{letter}</span>'
@@ -417,15 +417,15 @@ if not st.session_state.mulai_belajar and st.session_state.current_page in locke
 # =====================================================================
 # KONTEN HALAMAN-HALAMAN
 # =====================================================================
- 
 
 # --- HALAMAN 1: BERANDA LKPD ---
 if st.session_state.current_page == "1. 🏠 Beranda LKPD":
-
-# Logo sekolah
-    kolom_kiri, kolom_tengah, kolom_kanan = st.columns([1, 2, 1])
-    with kolom_tengah:
-    st.image("logo-sman10.jpg", width=120)
+    col_l1, col_l2, col_l3 = st.columns([1.8, 1, 1.8])
+    with col_l2:
+        try:
+            st.image("logo.jpg", use_column_width=True)
+        except Exception:
+            pass
     st.markdown('<h1 class="title-gradient">SMAN 10 BANDAR LAMPUNG<br>LKPD INFORMATIKA KELAS 10<br>DATA, INFORMASI, DAN VALIDASINYA</h1>', unsafe_allow_html=True)
     st.markdown('<p class="subtitle-text">Petualangan Belajar Interaktif untuk Kelas X SMA</p>', unsafe_allow_html=True)
     
