@@ -319,7 +319,7 @@ def render_crossword_html():
                 letter = get_revealed_letter(r, c)
                 clue_num = grid_clue_numbers.get((r, c), "")
                 
-                html += '<td style="width: 40px; height: 40px; border: 1px solid #9ca3af; background-color: #ffffff; color: #1e1b4b; text-align: center; font-size: 20px; font-weight: bold; position: relative; padding: 0; box-shadow: inset 0 0 4px rgba(0,0,0,0.1);">'
+                html += '<td style="width: 40px; height: 40px; border: 1px solid #9ca3af; background-color: #FFF8DC; color: #1e1b4b; text-align: center; font-size: 20px; font-weight: bold; position: relative; padding: 0; box-shadow: inset 0 0 4px rgba(0,0,0,0.1);">'
                 if clue_num:
                     html += f'<span style="font-size: 9px; position: absolute; top: 1px; left: 2px; color: #4b5563; font-weight: normal;">{clue_num}</span>'
                 html += f'<span style="line-height: 40px;">{letter}</span>'
