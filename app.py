@@ -417,7 +417,6 @@ if not st.session_state.mulai_belajar and st.session_state.current_page in locke
 # =====================================================================
 # KONTEN HALAMAN-HALAMAN
 # =====================================================================
-if not st.session_state.mulai_belajar:
 
     # Logo sekolah
     kolom_kiri, kolom_tengah, kolom_kanan = st.columns([1, 2, 1])
