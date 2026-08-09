@@ -16,6 +16,7 @@ try:
     openpyxl_installed = True
 except ImportError:
     openpyxl_installed = False
+    
 # Logo sekolah
 st.markdown(
     "<div style='text-align:center;'>",
