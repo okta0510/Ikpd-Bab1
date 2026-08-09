@@ -17,16 +17,6 @@ try:
 except ImportError:
     openpyxl_installed = False
     
-# Logo sekolah
-st.markdown(
-    "<div style='text-align:center;'>",
-    unsafe_allow_html=True
-)
-
-st.image("logo_sman10.jpg", width=120)
-
-st.markdown("</div>", unsafe_allow_html=True)
-
 # =====================================================================
 # INISIALISASI SESSION STATE
 # =====================================================================
