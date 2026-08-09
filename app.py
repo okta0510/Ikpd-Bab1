@@ -417,15 +417,15 @@ if not st.session_state.mulai_belajar and st.session_state.current_page in locke
 # =====================================================================
 # KONTEN HALAMAN-HALAMAN
 # =====================================================================
-
-    # Logo sekolah
-    kolom_kiri, kolom_tengah, kolom_kanan = st.columns([1, 2, 1])
-
-    with kolom_tengah:
-        st.image("logo sman10.jpg", width=120)
+ 
 
 # --- HALAMAN 1: BERANDA LKPD ---
 if st.session_state.current_page == "1. 🏠 Beranda LKPD":
+
+# Logo sekolah
+    kolom_kiri, kolom_tengah, kolom_kanan = st.columns([1, 2, 1])
+    with kolom_tengah:
+    st.image("logo-sman10.jpg", width=120)
     st.markdown('<h1 class="title-gradient">SMAN 10 BANDAR LAMPUNG<br>LKPD INFORMATIKA KELAS 10<br>DATA, INFORMASI, DAN VALIDASINYA</h1>', unsafe_allow_html=True)
     st.markdown('<p class="subtitle-text">Petualangan Belajar Interaktif untuk Kelas X SMA</p>', unsafe_allow_html=True)
     
