@@ -417,6 +417,13 @@ if not st.session_state.mulai_belajar and st.session_state.current_page in locke
 # =====================================================================
 # KONTEN HALAMAN-HALAMAN
 # =====================================================================
+if not st.session_state.mulai_belajar:
+
+    # Logo sekolah
+    kolom_kiri, kolom_tengah, kolom_kanan = st.columns([1, 2, 1])
+
+    with kolom_tengah:
+        st.image("logo sman10.jpg", width=120)
 
 # --- HALAMAN 1: BERANDA LKPD ---
 if st.session_state.current_page == "1. 🏠 Beranda LKPD":
